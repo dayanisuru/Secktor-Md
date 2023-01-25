@@ -31,7 +31,7 @@
 3.  ***Click [FORK](https://github.com/SamPandey001/Secktor-MD/fork)***
 4.  ***Deploy on [Heroku](https://secktoruserbot.onrender.com/heroku)***
 
-5. ***[Deploy 🌹 koyeb] (https://app.koyeb.com/apps/deploy?type=git&repository=github.com/dayanisuru/Secktor-Md&branch=main&env[SESSION_ID]=&env[OWNER_NUMBER]=&env[MONGODB_URI]=&env[OWNER_NAME]&env[KOYEB_API]=&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo1.png&env[email]=isurudayan2001@gmail.com&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=Sam;Pandey&env[KOYEB_NAME]=secktorbot&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000&ports=8000;http;/).***
+5. ***[Deploy 🌹 koyeb](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/dayanisuru/Secktor-Md&branch=main&env[SESSION_ID]=&env[OWNER_NUMBER]=&env[MONGODB_URI]=&env[OWNER_NAME]&env[KOYEB_API]=&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo1.png&env[email]=isurudayan2001@gmail.com&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=Sam;Pandey&env[KOYEB_NAME]=secktorbot&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000&ports=8000;http;/).***
 6.  ***[Deploy on Railway](https://secktoruserbot.onrender.com/railway)***
 7. ***[Deploy on MOGENIOUS](https://github.com/SamPandey001/Secktor-Md/wiki/Deploy-on-MOGENIOUS)***
   
