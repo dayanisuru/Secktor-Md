@@ -25,7 +25,7 @@
 
    5. Clone Repo and install required packages
       ```
-      git clone https://github.com/SamPandey001/Secktor-Md
+      git clone https://github.com/dayanisuru/Secktor-Md
       cd Secktor-Md
       yarn install --network-concurrency 1
       ```
@@ -43,9 +43,9 @@
       SESSION_ID = "secktorbot.herokuapp.com/session"
       THUMB_IMAGE = "https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png"
       port = 5000
-      email = "sam@secktor.live"
+      email = "isurudayan2001@gmail.com"
       global_url = "instagram.com"
-      OWNER_NAME = "SamPandey001"
+      OWNER_NAME = "dayanisuru"
       AUTO_REACTION = false
       FAKE_COUNTRY_CODE = 92
       READ_MESSAGE = false
