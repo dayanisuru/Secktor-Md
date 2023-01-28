@@ -19,7 +19,8 @@ const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "help",
+            pattern: "help", 
+            pattern: "king",
             alias: ["menu"],
             desc: "Help list",
             category: "general",
@@ -54,7 +55,7 @@ Secktor.cmd({
                 let total = await sck1.countDocuments()
                 let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
-                    '```' + `│ ╭───────✧❁✧───────«
+                    '```' + `│ ╭───────✧🌹✧───────«
 │ │ User:- ${citel.pushName}
 │ │ Theme:- ${tlang().title}
 │ │ Prefix:- [ ${prefix} ]
