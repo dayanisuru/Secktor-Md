@@ -3,16 +3,16 @@
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
+ * @project_name : King-Md
  * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
+ * @description : King,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
 const { tlang, ringtone, cmd,fetchJson, sleep, botpic, getBuffer, pinterest, prefix, Config } = require('../lib')
 const { mediafire } = require("../lib/mediafire.js");
 const googleTTS = require("google-tts-api");
-const ytdl = require('ytdl-secktor')
+const ytdl = require('ytdl-King')
 const fs = require('fs-extra')
 var videotime = 60000 // 1000 min
 var dlsize = 1000 // 1000mb
@@ -34,7 +34,7 @@ cmd({
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
-            use: '<Hii,this is Secktor>',
+            use: '<Hii,this is King>',
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply('Please give me Sentence to change into audio.')
@@ -66,7 +66,7 @@ cmd({
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply(`Example : ${prefix}audio Back in black`)
-            let yts = require("secktor-pack")
+            let yts = require("King-pack")
             let search = await yts(text)
             listSerch = []
             teskd = `\nResult got from ${text}.\n`
@@ -109,7 +109,7 @@ cmd({
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply(`Use ${command} Back in Black`);
-            let yts = require("secktor-pack");
+            let yts = require("King-pack");
             let search = await yts(text);
             let anu = search.videos[0];
             let buttons = [{
@@ -270,7 +270,7 @@ cmd({
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply(`Example : ${prefix + command} Back in black`)
-            let yts = require("secktor-pack")
+            let yts = require("King-pack")
             let search = await yts(text)
             listSerch = []
             teskd = `Result From ${text}.\n_+ ${search.all.length} more results._`
@@ -278,7 +278,7 @@ cmd({
                 listSerch.push({
                     title: i.title,
                     rowId: `${prefix}ytmp3 ${i.url}`,
-                    description: `Secktor / ${i.timestamp}`
+                    description: `King / ${i.timestamp}`
                 })
             }
             const sections = [
@@ -311,7 +311,7 @@ cmd({
             use: '<yt search text>',
         },
         async(Void, citel, text) => {
-            let yts = require("secktor-pack");
+            let yts = require("King-pack");
             if (!text) return citel.reply(`Example : ${prefix}yts ${tlang().title} WhatsApp Bot`);
             let search = await yts(text);
             let textt = "*YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
@@ -372,7 +372,7 @@ cmd({
                 let fileSizeInBytes = stats.size;
                 let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
                 if (fileSizeInMegabytes <= dlsize) {
-                    let yts = require("secktor-pack");
+                    let yts = require("King-pack");
                     let search = await yts(text);
                     let buttonMessage = {
                         video: fs.readFileSync(`./${randomName}`),
@@ -447,7 +447,7 @@ cmd({
             let fileSizeInBytes = stats.size;
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
-                let yts = require("secktor-pack");
+                let yts = require("King-pack");
                 let search = await yts(text);
                 let buttonMessage = {
                     audio: fs.readFileSync(`./${randomName}`),
@@ -523,7 +523,7 @@ cmd({
             let fileSizeInBytes = stats.size;
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
-                let yts = require("secktor-pack");
+                let yts = require("King-pack");
                 let search = await yts(text);
                 let buttonMessage = {
                     document: fs.readFileSync(`./${randomName}`),
