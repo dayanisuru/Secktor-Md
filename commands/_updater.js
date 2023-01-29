@@ -3,9 +3,9 @@
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
- * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
+ * @project_name : King-Md
+ * @author : dayanisuru <https://github.com/dayanisuru>
+ * @description : King,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
@@ -14,7 +14,7 @@ const { execSync } = require('child_process')
 const { tlang, Config, prefix,cmd } = require('../lib')
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "update",
+            pattern: "up",
             desc: "Shows repo\'s refreshed commits.",
             category: "misc",
             filename: __filename
@@ -29,7 +29,7 @@ cmd({
                   let button = [{
                     buttonId: `${prefix}updatenow`,
                     buttonText: {
-                        displayText: 'UPDATE'
+                        displayText: 'UPDATE karanna'
                     },
                     type: 1
                 }]
