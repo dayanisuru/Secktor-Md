@@ -3,9 +3,9 @@
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
+ * @project_name : King-Md
  * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
+ * @description : King,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
@@ -16,9 +16,13 @@ const Config = require('../config')
 let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1 } = require("../lib");
 const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
-const Secktor = require('../lib/commands')
+const King = require('../lib/commands')
     //---------------------------------------------------------------------------
-Secktor.cmd({
+King.cmd({ 
+            pattern: "MENU",
+            pattern: "panel",
+            pattern: "isuru",
+            pattern: "cmd",
             pattern: "help", 
             pattern: "king",
             alias: ["menu"],
@@ -55,7 +59,7 @@ Secktor.cmd({
                 let total = await sck1.countDocuments()
                 let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
-                    '```' + `│ ╭───────✧🌹✧───────«
+                    '```' + `│ ╭──✧𝐢𝐬𝐮𝐰𝐚 𝐜𝐨𝐦𝐦𝐞𝐧𝐝✧──«
 │ │ User:- ${citel.pushName}
 │ │ Theme:- ${tlang().title}
 │ │ Prefix:- [ ${prefix} ]
@@ -66,8 +70,8 @@ Secktor.cmd({
 │ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 │ │ Time:- ${time}
 │ │ Date:- ${date}
-│ ╰───────✧❁✧───────»
-╰───────────────⊷\n
+│ ╰────✧❁✧───»
+╰──────────⊷\n
 ` + '```'
                 str += `╭───『 ` + fancytext('Commands', 57) + `』──◆`
                 for (const category in cmds) {
@@ -114,11 +118,17 @@ Secktor.cmd({
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+King.cmd({
             pattern: "list",
+            pattern: "MENU",
+            pattern: "panel",
+            pattern: "isuru",
+            pattern: "cmd",
+            pattern: "help", 
+            pattern: "king",
             desc: "list menu",
             category: "general",
-            react: "✅"
+            react: "💎❤️"
         },
         async(Void, citel) => {
             const { commands } = require('../lib');
@@ -148,11 +158,11 @@ Secktor.cmd({
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+King.cmd({
         pattern: "owner",
         desc: "To check ping",
         category: "general",
-        react: "💜",
+        react: "❤️",
         filename: __filename
     },
     async(Void, citel) => {
@@ -185,11 +195,11 @@ Secktor.cmd({
     }
 )
 
-Secktor.cmd({
+King.cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
-    react: "✨",
+    react: "💎📣",
     filename: __filename
 },
 async(Void, citel, text) => {
@@ -199,7 +209,7 @@ async(Void, citel, text) => {
         if (!cmd) return await citel.reply("*❌No Such commands.*");
         else arr.push(`*🍁Command:* ${cmd.pattern}`);
         if (cmd.category) arr.push(`*🧩Type:* ${cmd.category}`);
-        if(cmd.filename) arr.push(`✨FileName: ${cmd.filename}`)
+        if(cmd.filename) arr.push(`💎📣FileName: ${cmd.filename}`)
         return await citel.reply(arr.join('\n'));
 
 
