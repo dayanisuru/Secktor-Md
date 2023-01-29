@@ -1,6 +1,6 @@
 const { tlang, cmd, sleep, getBuffer, prefix, Config } = require('../lib')
-const ytdl = require('ytdl-secktor')
-const yts = require('secktor-pack')
+const ytdl = require('ytdl-King')
+const yts = require('King-pack')
 const fs = require('fs')
 var videotime = 60000 // 1000 min
 var dlsize = 250 // 250mb
@@ -50,7 +50,7 @@ yts( opts, async function ( err, playlist ) {
                 let fileSizeInBytes = stats.size;
                 let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
                 if (fileSizeInMegabytes <= dlsize) {
-                    let yts = require("secktor-pack");
+                    let yts = require("King-pack");
                     let search = await yts(text);
                     let buttonMessage = {
                         video: fs.readFileSync(`./${randomName}`),
