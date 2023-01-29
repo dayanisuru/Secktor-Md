@@ -3,9 +3,9 @@
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
+ * @project_name : King-Md
  * @author : @samapndey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
+ * @description : King,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
@@ -201,7 +201,7 @@ ${
       if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== citel.chat)
         room[room.game._currentTurn ^ isSurrender ? "x" : "o"] = citel.chat;
         if(isWin){
-        await eco.give(citel.sender, "secktor", 2000);
+        await eco.give(citel.sender, "King", 2000);
         }
       if (isWin || isTie) {
         await Void.sendMessage(citel.chat, {
