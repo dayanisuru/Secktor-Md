@@ -122,7 +122,7 @@ cmd({
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "♫ meka",
+                        displayText: "♫ මෙක ඔබන්න",
                     },
                     type: 1,
                 },
