@@ -35,7 +35,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "sticker",
+            pattern: "s",
             alias: ["s"],
             desc: "Makes sticker of replied image/video.",
             category: "group",
