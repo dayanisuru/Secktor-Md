@@ -25,10 +25,10 @@ King.cmd({
             pattern: "cmd",
             pattern: "help", 
             pattern: "king",
-            alias: ["menu"],
+            alias: ["menu" ,"isuru"],
             desc: "Help list",
             category: "general",
-            react: "✨",
+            react: "✌️",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -104,6 +104,18 @@ King.cmd({
                     buttonText: {
                         displayText: 'List Menu'
                     },
+                    type: 11
+                },{
+                    buttonId: `${prefix}ping`,
+                    buttonText: {
+                        displayText: 'isuru'
+                    },
+                    type: 1
+                }, {
+                    buttonId: `${prefix}list`,
+                    buttonText: {
+                        displayText: 'song'
+                    },
                     type: 1
                 }]
                 let buttonMessaged = {
@@ -119,16 +131,12 @@ King.cmd({
     )
     //---------------------------------------------------------------------------
 King.cmd({
-            pattern: "list",
-            pattern: "MENU",
-            pattern: "panel",
-            pattern: "isuru",
-            pattern: "cmd",
-            pattern: "help", 
+            
+            pattern: "isuru", 
             pattern: "king",
             desc: "list menu",
             category: "general",
-            react: "💎❤️"
+            react: "😜"
         },
         async(Void, citel) => {
             const { commands } = require('../lib');
@@ -162,7 +170,7 @@ King.cmd({
         pattern: "owner",
         desc: "To check ping",
         category: "general",
-        react: "❤️",
+        react: "💜",
         filename: __filename
     },
     async(Void, citel) => {
@@ -199,7 +207,7 @@ King.cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
-    react: "💎📣",
+    react: "🌹",
     filename: __filename
 },
 async(Void, citel, text) => {
@@ -207,9 +215,9 @@ async(Void, citel, text) => {
  let arr = [];
         const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
         if (!cmd) return await citel.reply("*❌No Such commands.*");
-        else arr.push(`*🍁Command:* ${cmd.pattern}`);
+        else arr.push(`*🌹Command:* ${cmd.pattern}`);
         if (cmd.category) arr.push(`*🧩Type:* ${cmd.category}`);
-        if(cmd.filename) arr.push(`💎📣FileName: ${cmd.filename}`)
+        if(cmd.filename) arr.push(`💎FileName: ${cmd.filename}`)
         return await citel.reply(arr.join('\n'));
 
 
