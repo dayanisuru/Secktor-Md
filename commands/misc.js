@@ -16,7 +16,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
  const axios = require('axios')
   //---------------------------------------------------------------------------
  cmd({
-    pattern: "setwelcome",
+    pattern: "welcome",
     desc: "sets welcome message in specific group.",
     category: "misc",
 },
@@ -35,7 +35,7 @@ async(Void, citel, text,{ isCreator }) => {
 )
  //---------------------------------------------------------------------------
 cmd({
-    pattern: "setgoodbye",
+    pattern: "goodbye",
     desc: "sets goodbye message in specific group.",
     category: "misc",
 },
@@ -346,7 +346,7 @@ async(Void, citel, text,{ isCreator }) => {
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "chatbot",
+             pattern: "chat",
              desc: "activates and deactivates chatbot.\nuse buttons to toggle.",
              category: "misc",
              filename: __filename
