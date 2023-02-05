@@ -19,7 +19,12 @@ const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "king" ,"isuru" ,"list" ,"cmd", "help" ,"panel",
+            pattern: "king",
+            Pattern: "isuru",
+            pattern: "list",
+            pattern: "cmd",
+            pattern: "help",
+            pattern: "panel",
             alias: ["menu"],
             desc: "Help list",
             category: "general",
@@ -114,7 +119,12 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "king" ,"isuru" ,"list" ,"cmd", "help" ,"panel",
+            pattern: "king",
+            Pattern: "isuru",
+            pattern: "list",
+            pattern: "cmd",
+            pattern: "help",
+            pattern: "panel",
             desc: "list menu",
             category: "general",
             react: "✌️"
