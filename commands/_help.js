@@ -19,16 +19,11 @@ const readmore = long.repeat(4001)
 const King = require('../lib/commands')
     //---------------------------------------------------------------------------
 King.cmd({ 
-            pattern: "MENU",
-            pattern: "panel",
-            pattern: "isuru",
-            pattern: "cmd",
-            pattern: "help", 
-            pattern: "king",
-            alias: ["menu" ,"isuru"],
+            pattern: "king" ,"isuru" ,"list" ,"cmd", "help" ,"panel",
+            alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "✌️",
+            react: "😎",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -53,9 +48,9 @@ King.cmd({
                 })
                 const time = moment(moment())
                     .format('HH:mm:ss')
-                moment.tz.setDefault('Asia/KOLKATA')
+                moment.tz.setDefault('Asia/COLOMBO')
                     .locale('id')
-                const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                const date = moment.tz('Asia/Colombo').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
                 let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
@@ -104,18 +99,6 @@ King.cmd({
                     buttonText: {
                         displayText: 'List Menu'
                     },
-                    type: 11
-                },{
-                    buttonId: `${prefix}ping`,
-                    buttonText: {
-                        displayText: 'isuru'
-                    },
-                    type: 1
-                }, {
-                    buttonId: `${prefix}list`,
-                    buttonText: {
-                        displayText: 'song'
-                    },
                     type: 1
                 }]
                 let buttonMessaged = {
@@ -131,36 +114,34 @@ King.cmd({
     )
     //---------------------------------------------------------------------------
 King.cmd({
-            
-            pattern: "isuru", 
-            pattern: "king",
+            pattern: "king" ,"isuru" ,"list" ,"cmd", "help" ,"panel" ,"menu",
             desc: "list menu",
             category: "general",
-            react: "😜"
+            react: "🌹"
         },
         async(Void, citel) => {
             const { commands } = require('../lib');
             let str = `
 ╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
             str += '```' + `
-┃ ⛥╭──────────────      
-┃ ⛥│ User: ${citel.pushName}
-┃ ⛥│ Theme: ${tlang().title}
-┃ ⛥│ Prefix: ${prefix}
-┃ ⛥│ Owner: ${Config.ownername}
-┃ ⛥│ Commands: ${commands.length}
-┃ ⛥│ Uptime: ${runtime(process.uptime())}
-┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ ⛥│  
-┃ ⛥╰───────────
+┃ ☞〲╭──────────────      
+┃ ☞〲│ User: ${citel.pushName}
+┃ ☞〲│ Theme: ${tlang().title}
+┃ ☞〲│ Prefix: ${prefix}
+┃ ☞〲│ Owner: ${Config.ownername}
+┃ ☞〲│ Commands: ${commands.length}
+┃ ☞〲│ Uptime: ${runtime(process.uptime())}
+┃ ☞〲│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ ☞〲│  
+┃ ☞〲╰───────────
 ╰━━━━━━━━━━━──⊷\n` + '```'
             str += `╭━━━━━━━━━━━────⊷\n`
-            str += `┃ ⛥ ╭─────────────\n`
+            str += `┃ ☞〲 ╭─────────────\n`
             for (let i = 0; i < commands.length; i++) {
              if(commands[i].pattern==undefined) continue
-                str += `┃ ⛥ │ ➛ ${i+1}. ` + commands[i].pattern + '\n'
+                str += `┃ ☞〲 │ ➛ ${i+1}. ` + commands[i].pattern + '\n'
             }
-            str += `┃ ⛥ ╰─────────────\n`
+            str += `┃ ☞〲 ╰─────────────\n`
             str += `╰━━━━━━━━━━━───⊷\n`
             return Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
         }
@@ -192,7 +173,7 @@ King.cmd({
                     thumbnail: log0,
                     mediaType: 2,
                     mediaUrl: '',
-                    sourceUrl: `https://wa.me/+` + owner[0] + '?text=Hii bro,I am ' + citel.pushName,
+                    sourceUrl: `https://wa.me/+94776312185` + owner[0] + '?text=Hii bro,I am ' + citel.pushName,
                 },
             },
         };
@@ -215,9 +196,9 @@ async(Void, citel, text) => {
  let arr = [];
         const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
         if (!cmd) return await citel.reply("*❌No Such commands.*");
-        else arr.push(`*🌹Command:* ${cmd.pattern}`);
+        else arr.push(`*🍁Command:* ${cmd.pattern}`);
         if (cmd.category) arr.push(`*🧩Type:* ${cmd.category}`);
-        if(cmd.filename) arr.push(`💎FileName: ${cmd.filename}`)
+        if(cmd.filename) arr.push(`✨FileName: ${cmd.filename}`)
         return await citel.reply(arr.join('\n'));
 
 
