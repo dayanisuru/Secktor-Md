@@ -18,7 +18,7 @@ var videotime = 60000 // 1000 min
 var dlsize = 1000 // 1000mb
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "tgs" ,"t" ,"te",
+            pattern: "tgs",
             desc: "Downloads telegram stickers.",
             category: "downloader",
             filename: __filename,
@@ -30,11 +30,11 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "tts" ,"voice" ,"tt",
+            pattern: "song",
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
-            use: '<Hii,this is King isuwa>',
+            use: '<Hii,this is Secktor>',
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply('Please give me Sentence to change into audio.')
@@ -58,7 +58,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "video" ,"v" ,"vedeo" ,"vidio" ,"vv",
+            pattern: "video",
             desc: "Downloads video from yt.",
             category: "downloader",
             filename: __filename,
@@ -74,7 +74,7 @@ cmd({
                 listSerch.push({
                     title: i.title,
                     rowId: `${prefix}ytmp4 ${i.url}`,
-                    description: `Isuru / ${i.timestamp}`
+                    description: `Secktor / ${i.timestamp}`
                 })
             }
             const sections = [
@@ -122,7 +122,7 @@ cmd({
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "♫ meka",
+                        displayText: "♫ meniks meka",
                     },
                     type: 1,
                 },
@@ -141,7 +141,7 @@ cmd({
                 caption: `
 ╭───────────────◆
 │⿻ ${tlang().title} 
-│  *Youtube Player* ✨
+│  *Youtube Player* ✌️
 │⿻ *Title:* ${anu.title}
 │⿻ *Duration:* ${anu.timestamp}
 │⿻ *Viewers:* ${anu.views}
@@ -162,7 +162,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "ringtone",
+            pattern: "song",
             desc: "Downloads ringtone.",
             category: "downloader",
             filename: __filename,
@@ -186,7 +186,7 @@ cmd({
         async(Void, citel, text) => {
             if (!text) return reply("What picture are you looking for?") && Void.sendMessage(citel.chat, {
                 react: {
-                    text: '❌',
+                    text: '😍',
                     key: citel.key
                 }
             })
@@ -212,7 +212,7 @@ cmd({
                     headerType: 4,
                     contextInfo: {
                         externalAdReply: {
-                            title: `Here it is✨`,
+                            title: `Here it is🌹`,
                             body: `${Config.ownername}`,
                             thumbnail: log0,
                             mediaType: 2,
@@ -230,7 +230,7 @@ cmd({
         })
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "mediafire",
+            pattern: "song",
             desc: "Downloads zip from Mediafire.",
             category: "downloader",
             filename: __filename,
@@ -262,7 +262,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "audio",
+            pattern: "song",
             desc: "Downloads audio from youtube.",
             category: "downloader",
             filename: __filename,
@@ -304,7 +304,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "yts",
+            pattern: "video",
             desc: "Gives descriptive info of query from youtube..",
             category: "downloader",
             filename: __filename,
@@ -314,7 +314,7 @@ cmd({
             let yts = require("secktor-pack");
             if (!text) return citel.reply(`Example : ${prefix}yts ${tlang().title} WhatsApp Bot`);
             let search = await yts(text);
-            let textt = "*YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
+            let textt = "*king isuwa YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
             let no = 1;
             for (let i of search.all) {
                 textt += `⚡ No : ${no++}\n ❤Title : ${i.title}\n♫ Type : ${
@@ -338,7 +338,7 @@ cmd({
     //---------------------------------------------------------------------------
 
 cmd({
-            pattern: "ytmp4",
+            pattern: "video",
             desc: "Downloads video from youtube.",
             category: "downloader",
             filename: __filename,
@@ -406,7 +406,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "ytmp3",
+        pattern: "song",
         desc: "Downloads audio by yt link.",
         category: "downloader",
         use: '<yt video url>',
@@ -482,7 +482,7 @@ cmd({
 
   //---------------------------------------------------------------------------
 cmd({
-        pattern: "ytdoc",
+        pattern: "video",
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
         use: '<ytdoc video url>',
