@@ -10,9 +10,9 @@ global.email = 'isurudyan2001@gmail.com'
 global.github = 'https://github.com/dayanisuru/Secktor-Md'
 global.location = 'Sultanpur IN'
 global.gurl = 'https://instagram.com/' // add your username
-global.sudo = process.env.SUDO || '94783800632'
-global.devs = '94783800632';
-global.website = 'https://github.com/dayanisuru/Secktor-Md' //wa.me/+91000000000000
+global.sudo = process.env.SUDO || '94740803590'
+global.devs = '94740803590';
+global.website = 'https://github.com/dayanisuru/Secktor-Md' //wa.me/+94740803590
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png'
 module.exports = {
   botname: process.env.BOT_NAME || '𝐒𝐞𝐜𝐤𝐭𝐨𝐫 𝐁𝐨𝐭𝐭𝐨',
