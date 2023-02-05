@@ -3,9 +3,9 @@
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
- * @project_name : King-Md
+ * @project_name : Secktor-Md
  * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : King,A Multi-functional whatsapp bot.
+ * @description : Secktor,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
@@ -16,14 +16,14 @@ const Config = require('../config')
 let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1 } = require("../lib");
 const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
-const King = require('../lib/commands')
+const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
-King.cmd({ 
+Secktor.cmd({
             pattern: "king" ,"isuru" ,"list" ,"cmd", "help" ,"panel",
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "😎",
+            react: "🌹",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -48,13 +48,13 @@ King.cmd({
                 })
                 const time = moment(moment())
                     .format('HH:mm:ss')
-                moment.tz.setDefault('Asia/COLOMBO')
+                moment.tz.setDefault('Asia/KOLKATA')
                     .locale('id')
-                const date = moment.tz('Asia/Colombo').format('DD/MM/YYYY')
+                const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
                 let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
-                    '```' + `│ ╭──✧𝐢𝐬𝐮𝐰𝐚 𝐜𝐨𝐦𝐦𝐞𝐧𝐝✧──«
+                    '```' + `│ ╭───────✧❁✧───────«
 │ │ User:- ${citel.pushName}
 │ │ Theme:- ${tlang().title}
 │ │ Prefix:- [ ${prefix} ]
@@ -65,8 +65,8 @@ King.cmd({
 │ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 │ │ Time:- ${time}
 │ │ Date:- ${date}
-│ ╰────✧❁✧───»
-╰──────────⊷\n
+│ ╰───────✧❁✧───────»
+╰───────────────⊷\n
 ` + '```'
                 str += `╭───『 ` + fancytext('Commands', 57) + `』──◆`
                 for (const category in cmds) {
@@ -113,41 +113,41 @@ King.cmd({
         }
     )
     //---------------------------------------------------------------------------
-King.cmd({
-            pattern: "king" ,"isuru" ,"list" ,"cmd", "help" ,"panel" ,"menu",
+Secktor.cmd({
+            pattern: "king" ,"isuru" ,"list" ,"cmd", "help" ,"panel",
             desc: "list menu",
             category: "general",
-            react: "🌹"
+            react: "✌️"
         },
         async(Void, citel) => {
             const { commands } = require('../lib');
             let str = `
 ╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
             str += '```' + `
-┃ ☞〲╭──────────────      
-┃ ☞〲│ User: ${citel.pushName}
-┃ ☞〲│ Theme: ${tlang().title}
-┃ ☞〲│ Prefix: ${prefix}
-┃ ☞〲│ Owner: ${Config.ownername}
-┃ ☞〲│ Commands: ${commands.length}
-┃ ☞〲│ Uptime: ${runtime(process.uptime())}
-┃ ☞〲│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ ☞〲│  
-┃ ☞〲╰───────────
+┃ ☞╭──────────────      
+┃ ☞│ User: ${citel.pushName}
+┃ ☞│ Theme: ${tlang().title}
+┃ ☞│ Prefix: ${prefix}
+┃ ☞│ Owner: ${Config.ownername}
+┃ ☞│ Commands: ${commands.length}
+┃ ☞│ Uptime: ${runtime(process.uptime())}
+┃ ☞│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ ☞│  
+┃ ☞╰───────────
 ╰━━━━━━━━━━━──⊷\n` + '```'
             str += `╭━━━━━━━━━━━────⊷\n`
-            str += `┃ ☞〲 ╭─────────────\n`
+            str += `┃ ☞ ╭─────────────\n`
             for (let i = 0; i < commands.length; i++) {
              if(commands[i].pattern==undefined) continue
-                str += `┃ ☞〲 │ ➛ ${i+1}. ` + commands[i].pattern + '\n'
+                str += `┃ ☞ │ ➛ ${i+1}. ` + commands[i].pattern + '\n'
             }
-            str += `┃ ☞〲 ╰─────────────\n`
+            str += `┃ ☞ ╰─────────────\n`
             str += `╰━━━━━━━━━━━───⊷\n`
             return Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
         }
     )
     //---------------------------------------------------------------------------
-King.cmd({
+Secktor.cmd({
         pattern: "owner",
         desc: "To check ping",
         category: "general",
@@ -173,7 +173,7 @@ King.cmd({
                     thumbnail: log0,
                     mediaType: 2,
                     mediaUrl: '',
-                    sourceUrl: `https://wa.me/+94776312185` + owner[0] + '?text=Hii bro,I am ' + citel.pushName,
+                    sourceUrl: `https://wa.me/+` + owner[0] + '?text=Hii bro,I am ' + citel.pushName,
                 },
             },
         };
@@ -184,11 +184,11 @@ King.cmd({
     }
 )
 
-King.cmd({
+Secktor.cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
-    react: "🌹",
+    react: "😜",
     filename: __filename
 },
 async(Void, citel, text) => {
