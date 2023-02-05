@@ -16,7 +16,7 @@ const { exec } = require('child_process')
 
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "photo",
+            pattern: "p" ,"photo" ,"poto" ,"4to" ,"pto" ,"pic" ,"pot",
             desc: "Makes photo of replied sticker.",
             category: "converter",
             use: '<reply to any gif>',
@@ -40,7 +40,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "quotely",
+            pattern: "quotely" ,"p" ,"photo" ,"poto" ,"4to" ,"pto" ,"pic" ,"pot",
             desc: "Makes Sticker of quoted text.",
             alias: ["q"],
             category: "converter",
@@ -139,7 +139,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "toaudio",
+        pattern: "toaudio" ,"p" ,"photo" ,"poto" ,"4to" ,"pto" ,"pic" ,"pot",
         desc: "changes type to audio.",
         category: "converter",
         use: '<reply to any audio>',
