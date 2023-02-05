@@ -18,7 +18,7 @@ var videotime = 60000 // 1000 min
 var dlsize = 1000 // 1000mb
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "tgs",
+            pattern: "tgs" ,"t" ,"te",
             desc: "Downloads telegram stickers.",
             category: "downloader",
             filename: __filename,
@@ -30,11 +30,11 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "tts",
+            pattern: "tts" ,"voice" ,"tt",
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
-            use: '<Hii,this is Secktor>',
+            use: '<Hii,this is King isuwa>',
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply('Please give me Sentence to change into audio.')
@@ -58,7 +58,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "video",
+            pattern: "video" ,"v" ,"vedeo" ,"vidio" ,"vv",
             desc: "Downloads video from yt.",
             category: "downloader",
             filename: __filename,
@@ -74,7 +74,7 @@ cmd({
                 listSerch.push({
                     title: i.title,
                     rowId: `${prefix}ytmp4 ${i.url}`,
-                    description: `Secktor / ${i.timestamp}`
+                    description: `Isuru / ${i.timestamp}`
                 })
             }
             const sections = [
@@ -122,7 +122,7 @@ cmd({
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "♫ Audio",
+                        displayText: "♫ meka",
                     },
                     type: 1,
                 },
