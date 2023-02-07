@@ -30,7 +30,7 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "song",
+            pattern: "tts",
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
@@ -122,7 +122,7 @@ cmd({
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "♫ meniks meka",
+                        displayText: "♫ Audio isuwa",
                     },
                     type: 1,
                 },
@@ -141,10 +141,10 @@ cmd({
                 caption: `
 ╭───────────────◆
 │⿻ ${tlang().title} 
-│  *Youtube Player* ✌️
+│  *Youtube Player* ☠️
 │⿻ *Title:* ${anu.title}
 │⿻ *Duration:* ${anu.timestamp}
-│⿻ *Viewers:* ${anu.views}
+│⿻ *Viewers:* 🌹 ${anu.views}
 │⿻ *Uploaded:* ${anu.ago}
 │⿻ *Author:* ${anu.author.name}
 ╰────────────────◆
@@ -162,7 +162,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "song",
+            pattern: "ringtone",
             desc: "Downloads ringtone.",
             category: "downloader",
             filename: __filename,
@@ -186,7 +186,7 @@ cmd({
         async(Void, citel, text) => {
             if (!text) return reply("What picture are you looking for?") && Void.sendMessage(citel.chat, {
                 react: {
-                    text: '😍',
+                    text: '❌',
                     key: citel.key
                 }
             })
@@ -212,7 +212,7 @@ cmd({
                     headerType: 4,
                     contextInfo: {
                         externalAdReply: {
-                            title: `Here it is🌹`,
+                            title: `Here it is✨`,
                             body: `${Config.ownername}`,
                             thumbnail: log0,
                             mediaType: 2,
@@ -230,7 +230,7 @@ cmd({
         })
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "song",
+            pattern: "mediafire",
             desc: "Downloads zip from Mediafire.",
             category: "downloader",
             filename: __filename,
@@ -262,7 +262,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "song",
+            pattern: "audio",
             desc: "Downloads audio from youtube.",
             category: "downloader",
             filename: __filename,
@@ -304,7 +304,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "video",
+            pattern: "yts",
             desc: "Gives descriptive info of query from youtube..",
             category: "downloader",
             filename: __filename,
@@ -314,7 +314,7 @@ cmd({
             let yts = require("secktor-pack");
             if (!text) return citel.reply(`Example : ${prefix}yts ${tlang().title} WhatsApp Bot`);
             let search = await yts(text);
-            let textt = "*king isuwa YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
+            let textt = "*YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
             let no = 1;
             for (let i of search.all) {
                 textt += `⚡ No : ${no++}\n ❤Title : ${i.title}\n♫ Type : ${
@@ -338,7 +338,7 @@ cmd({
     //---------------------------------------------------------------------------
 
 cmd({
-            pattern: "video",
+            pattern: "ytmp4",
             desc: "Downloads video from youtube.",
             category: "downloader",
             filename: __filename,
@@ -406,7 +406,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "song",
+        pattern: "ytmp3",
         desc: "Downloads audio by yt link.",
         category: "downloader",
         use: '<yt video url>',
@@ -482,7 +482,7 @@ cmd({
 
   //---------------------------------------------------------------------------
 cmd({
-        pattern: "video",
+        pattern: "ytdoc",
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
         use: '<ytdoc video url>',
