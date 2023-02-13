@@ -40,7 +40,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "quotely",
+            pattern: "qho",
             desc: "Makes Sticker of quoted text.",
             alias: ["q"],
             category: "converter",
@@ -94,7 +94,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "fancy",
+            pattern: "ii",
             desc: "Makes stylish/fancy given text",
             category: "converter",
             use: '56 Secktor',
@@ -139,7 +139,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "toaudio",
+        pattern: "photo",
         desc: "changes type to audio.",
         category: "converter",
         use: '<reply to any audio>',
