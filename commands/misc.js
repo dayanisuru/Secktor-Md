@@ -61,7 +61,7 @@ async(Void, citel, text,{ isCreator }) => {
          async(Void, citel, text) => {
              Void.sendMessage(citel.chat, {
                  sticker: {
-                     url: `https://api.xteam.xyz/attp?file&text=${encodeURI(text)}`
+                     url: `https://api.xteam.xyz/attp?file&text=${encodeURI(match)}`
                  }
              }, {
                  quoted: citel
