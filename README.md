@@ -36,10 +36,13 @@
 
 
 ***[Deploy 🌹 koyeb](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/dayanisuru/Secktor-Md&branch=main&env[SESSION_ID]=&env[OWNER_NUMBER]=&env[MONGODB_URI]=&env[OWNER_NAME]&env[KOYEB_API]=&env[PREFIX]=.&env[email]=isurudayan2001@gmail.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=private&env[THEME]=SECKTOR&env[PACK_INFO]=Sam;Pandey&env[KOYEB_NAME]=secktorbot&env[PORT]=8000&ports=8000;http;/).***
-6.  ***[Deploy on Railway](https://secktoruserbot.onrender.com/railway)***
-7. ***[Deploy on MOGENIOUS](https://github.com/SamPandey001/Secktor-Md/wiki/Deploy-on-MOGENIOUS)***
+ 
+           6.  ***[Deploy on Railway](https://secktoruserbot.onrender.com/railway)***
+
+                 7. ***[Deploy on MOGENIOUS](https://github.com/SamPandey001/Secktor-Md/wiki/Deploy-on-MOGENIOUS)***
   
-8. ***Deploy in [Linux](https://github.com/SamPandey001/Secktor-Deploy#deploy-in-any-shell-including-termux)***
+
+                        8. ***Deploy in [Linux](https://github.com/SamPandey001/Secktor-Deploy#deploy-in-any-shell-including-termux)***
 
 9. if you get error in doing above try, [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
 ---
